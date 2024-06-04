@@ -1,0 +1,77 @@
+.calendar {
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .calendar-header h2 {
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .header, .week {
+    display: flex;
+  }
+  
+  .header > div, .day {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  .header > div {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  .day {
+    background-color: #fff;
+  }
+  
+  .day.today {
+    color: #db3d44;
+  }
+  
+  .day.not-current {
+    color: #ccc;
+  }
+  
+  .calendar-header button {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .calendar-header button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .month-view, .year-view {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .month, .year {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .month:hover, .year:hover {
+    background-color: #f0f0f0;
+  }
+  
